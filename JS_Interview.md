@@ -25,6 +25,8 @@ printFullName.apply(name2, ["Mumbai", "Maharashtra"]); // in apply we need to pa
 
 
 // bind method
-let printMyName = printFulltame.bind(name, "Mumbai", "Maharashtra"); // This will return the function and we will call this when ever required.
+let printMyName = printFullname.bind(name, "Mumbai", "Maharashtra"); // This will return the function and we will call this when ever required.
 console. log (printMyName) ; printMyName () ;
 ```
+
+### Polyfill for bind
