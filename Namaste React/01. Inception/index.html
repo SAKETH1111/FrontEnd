@@ -1,0 +1,28 @@
+<!-- Creating a html page using javascript. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+</head>
+<body>
+    <div id="root">
+        <!-- <h1>Hello World</h1>  
+        This H1 heading using html. 
+        Now lets see using Javascript below by using Script.
+        We need to declare Script tag to write JS code in between them.
+        -->
+    </div>
+
+    <script>
+        const heading = document.createElement("h1");
+        heading.innerHTML="Hello World from JavaScript";
+
+        const root = document.getElementById("root");
+        root.appendChild(heading);
+        // Here we are appending the heading into the div tag with id= "root"
+    </script>
+</body>
+</html>

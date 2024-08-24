@@ -1,0 +1,54 @@
+<!--  Creating a HTML page with help of React -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- We are declaring css over here -->
+    <link rel="stylesheet" href="./index.css"/>
+    <title>Namaste React</title>
+</head>
+<body>
+    <h1>Heading will print because we are rendering only the below root id by react, so it will replace in the div</h1>
+
+    <div id="root">
+        <!-- This will be replaced by the react script when we render the parent in APP.js -->
+        <h1>"Saketh is here"</h1>
+    </div>
+    <h1>Not replaced by react beacuse outside of root div</h1>
+
+    <!-- // This is one way you can import react into your project using React CDN Links -->
+     <!-- This link has the core of react framework code -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+     <!-- This link has the code of react dom to modify or change the Dom -->
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Moved the code to App.js -->
+    <script src ="./App.js">
+        //  // It will take 3 arguments, first tag type, second one will give attributes to the tag,third we need to put the content we need in the first tag
+        //  const heading = React.createElement("h1",{},"Hello World from React!!");
+        // // If we need to put h1 tag into the root. We need to use the ReactDom to do that because ReactDOM manages the root.
+        // const root = ReactDOM.createRoot(document.getElementById("root"));
+        // // rendering the react root
+        // root.render(heading);
+       
+    </script>
+</body>
+</html>
+
+<!-- // What is CDN?
+// What is crossorigin?
+
+Code is running in Sequence.
+
+// React is plain Javascript code. React is a JavaScript Library
+// You can see that code in CDN Links from above Links. 
+You can open console log and press React and ReactDom to see all the details regarding the react library and features
+
+// React can only be used in small part of webpage. It can work independently.
+Thats why React is a library not a framework.
+// Whereas Framework comes with lot of information , 
+bundles Like we need to create whole framework to create an app. 
+But library can be used in any part of framework or app independently of the framework.
+
+-->
+
