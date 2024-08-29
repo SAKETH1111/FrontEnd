@@ -11,3 +11,6 @@
 9. In this project we will use `parcel`. `npm install -D parcel` to install parcel dependencies. `-D` is tell it is dev dependencies.
 10. Dev dependecies are used for development environment not for production environment.
 11. ^ - caret . the dependency will automatically updated to new minor/patch version in package.json without incrementing the major version, ~ will update to future patches without incrementing minor versions.
+12. `package-lock.json` - it will keep track exact version that is being installed, also check if the development an production has same versions when deployed.
+13. `node_modules` - it has all the code that `npm` has fetched, all the dependecies code are pulled into the dev. Transitive dependency- if you pull one dependecy into your project like parcel, it might have other dependency and that other dependecy might have more dependecy so the node_module folder is large with lot of dependecy.
+14. 
