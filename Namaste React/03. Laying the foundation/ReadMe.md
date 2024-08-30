@@ -30,10 +30,14 @@ return <h1> This is a functional component</h1>;
 }
 or
 const Heading = () => (
-return <h1> This is a functional component</h1>;
-
+ <h1> This is a functional component</h1>
 )
+
+To reander the functional component.
+we declare the component in this way.
+<Heading/>
 ```
+15. component compensition- Insterting one component into other components into each other.
 
 
 
