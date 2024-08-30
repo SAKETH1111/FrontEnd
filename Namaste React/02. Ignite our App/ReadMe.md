@@ -17,3 +17,7 @@
 15. Your package.json and package-lock.json will have all the information about depenedncies, by simply using npm install, you will have all the node_modeule dependecies. Thats why you doneed to upload it into github.
 16. `npx parcel index.html` here index.html is the source file. npx means executing the dependecy. executing the parcel dependecy.
 17. The parcel execution will host the source file to the local host server and that builder server is a development server.
+18. CDN link used for Getting react is not a good way because we need to update the links as react versions get updated, instead you can install the dependecy using npm. So it will be added to package.json and it will be available in node_modules. Same for react-dom. npm i react-dom ( i is install).
+19. `import` are not present in normal javascript or browserscript files. you need to define the scrippt type as `module` then imports will work in javascript file.
+20. Parcel - will update the code as you change in the browser( Hot Module Replacement). It uses file watching algorithm ( it is written in C++)
+21. 
