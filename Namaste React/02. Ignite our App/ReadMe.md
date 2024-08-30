@@ -15,4 +15,5 @@
 13. `node_modules` - it has all the code that `npm` has fetched, all the dependecies code are pulled into the dev. Transitive dependency- if you pull one dependecy into your project like parcel, it might have other dependency and that other dependecy might have more dependecy so the node_module folder is large with lot of dependecy.
 14. node_module- will not needed in production or github repository. so to do that you can create `.gitignore` and declare the file which we dont want in production.
 15. Your package.json and package-lock.json will have all the information about depenedncies, by simply using npm install, you will have all the node_modeule dependecies. Thats why you doneed to upload it into github.
-16.  
+16. `npx parcel index.html` here index.html is the source file. npx means executing the dependecy. executing the parcel dependecy.
+17. The parcel execution will host the source file to the local host server and that builder server is a development server.
