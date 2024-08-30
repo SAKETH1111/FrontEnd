@@ -7,3 +7,4 @@
 ```
 To run this we use , `npm run start` which is simialar to `npx parcel index.html`
 to build we run `npm run build`
+2. 
