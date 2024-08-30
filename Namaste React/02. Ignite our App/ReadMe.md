@@ -22,4 +22,6 @@
 21. Parcel - will update the code as you change in the browser( Hot Module Replacement). It uses file watching algorithm ( it is written in C++)
 22. Parcel - Dev Build, Hot Module Replacement, Local Server, Caching- Faster Builds(. parcel-chace files). Image Optimization, Minification of code, Bundling, compress your code, Consistent hashing, code splitting , differential bundling ( support different browsers and different versions of the browser), Diagnosting, Error Handling, Host on your application with Https. Tree Shaking (parcel will remove unnessary code), has lazy mode. Learn more at https://parceljs.org/ . Different dev and production bundles. Production build will take little more time.
 23. `npx parcel build index.html` this will create production bundle. It will put all those files in a folder called `dist`.
-24. 
+24. `.gitignore` we can add node_module, dist and .parcel-cache
+25. In Package.json you can add browsersLists, here mention the browser which you wanna support and how many previous versions of that browser do you wanna support. https://browserslist.dev/?q=bGFzdCAyIHZlcnNpb25z
+26. 
