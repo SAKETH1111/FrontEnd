@@ -36,9 +36,14 @@ const Heading = () => (
 
 To reander the functional component.
 we declare the component in this way.
-<Heading/>
+<Heading/> or <Heading></Heading> or {Heading()} all are same.
 ```
 15. component compensition- Insterting one component into other components into each other.
+16. In jsx using {} curly braces enable you to write javscript code.
+17. React element can be put into the curly braces to render them {heading}. small leter starting is a element, capital leter is a component.
+18. cross site scripting. If you are using a javascript that is handling a malicious api. Attacker can send the javascript code to run on your system, to get information by running the JS code.
+19. JSX will usually take care of it, it escapes it. it prevents to happen the cross site scripting.
+20. 
 
 
 
