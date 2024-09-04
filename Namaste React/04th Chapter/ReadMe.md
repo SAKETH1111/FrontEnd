@@ -5,3 +5,6 @@
 5. 
 
 
+We can pass the dynamic date to the resturant card by using props.
+
+Config Driven UI - Website is driven by data or Ex : The UI looks different in different region based on the data. Like swiggy might have different offer in Hyderabad, Delhi, Banglore and mumbai
