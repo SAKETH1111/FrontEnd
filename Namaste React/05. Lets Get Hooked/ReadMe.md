@@ -12,4 +12,10 @@
 13. 1 file can have only 1 default export.
 14. wrie infront of the function or object.
 15. Yes, you can use both named and default exports in the same file for same component.
+16. Always keep your component small.
+17. React does faster DOM manupalation.
+
+    ## React Hooks
+
+    
 
