@@ -21,3 +21,11 @@
     2. Import hooks as named imports.
     3. useState() -   const [restData, setRestData]= useState(null) // passing default valur, you can use any variable name for setRestData. It is re rendering the componenet when you are setting the state
     4. useEffect()
+## Reconciliation Algorithm
+
+1. React uses Reconciliation Algorithm, it is also known as react fiber. It came in 2016 i.e React 16
+3. Div, h1 , img are actual dom.
+4. First react creates Virtual DOM, it is representation of actual DOM.
+5. diff algorithm- finds out the differences between updated and previous virtual DOM. and updates the DOM
+6. https://github.com/acdlite/react-fiber-architecture
+7. 
