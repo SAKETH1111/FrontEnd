@@ -8,3 +8,8 @@
 9. extension is not mandatory in `import paths` is not required.
 10. Never keep hard coded data in Components. You can create a folder called `utils` or `common`, `constants`.
 11. All constants should be in CAPITAL_LETTERS
+12. Default export and name export are different type of exports.
+13. 1 file can have only 1 default export.
+14. wrie infront of the function or object.
+15. Yes, you can use both named and default exports in the same file for same component.
+
