@@ -17,5 +17,7 @@
 
     ## React Hooks
 
-    1. State variable, Super powerful variable.
-    2. 
+    1. State variable, Super powerful variable. when data is updated UI is automatically updated. Super powerful react variable.
+    2. Import hooks as named imports.
+    3. useState() -   const [restData, setRestData]= useState(null) // passing default valur, you can use any variable name for setRestData
+    4. useEffect()
