@@ -19,10 +19,10 @@
 
     1. State variable, Super powerful variable. when data is updated UI is automatically updated. Super powerful react variable.
     2. Import hooks as named imports.
-    3. useState() -   const [restData, setRestData]= useState(null) // passing default valur, you can use any variable name for setRestData. It is re rendering the componenet when you are setting the state
-    4. useEffect()
+    3. useState returns  array with 2 values. array destructuring is used below.
+    4. useState() -   const [restData, setRestData]= useState(null) // passing default valur, you can use any variable name for setRestData. It is re rendering the componenet when you are setting the state
+    5. useEffect()
 ## Reconciliation Algorithm
-
 1. React uses Reconciliation Algorithm, it is also known as react fiber. It came in 2016 i.e React 16
 3. Div, h1 , img are actual dom.
 4. First react creates Virtual DOM, it is representation of actual DOM.
