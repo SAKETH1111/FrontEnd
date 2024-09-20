@@ -32,3 +32,8 @@ useEffect() - two arguments will pass in useEffect.
 As we are getting the data from the API, We can introduce spining loader untill the data becomes available.
 We use Shimmer UI- it shows fake page untill the UI gets loaded.
 
+- React will re render the whole component when state is updated.
+- So you declare const variable for the state but how is it assigning the value to it, As state updates react re renders the component. So it will be a new variable that is getting assigned.
+- But UI you will not see that componenet is entierly rendering due react reconcilation, it checks the diff and updates the UI.
+- 
+
