@@ -31,3 +31,4 @@ useEffect() - two arguments will pass in useEffect.
 
 As we are getting the data from the API, We can introduce spining loader untill the data becomes available.
 We use Shimmer UI- it shows fake page untill the UI gets loaded.
+
