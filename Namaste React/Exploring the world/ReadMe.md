@@ -29,3 +29,5 @@ useEffect() - two arguments will pass in useEffect.
    If there is origin miss match . CORS error will come. because of the origin miss match.
    Allow cors origin
 
+As we are getting the data from the API, We can introduce spining loader untill the data becomes available.
+We use Shimmer UI- it shows fake page untill the UI gets loaded.
