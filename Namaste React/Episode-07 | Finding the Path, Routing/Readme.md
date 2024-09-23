@@ -17,3 +17,5 @@ if there is a value in dependecny array. use Effect is called when the value get
 useEffect(()=>{
         console.log("use effect rendered");
     },[btnName])
+
+Hooks can always be called inside the functional component, it cannot be called outside of the functional componenet.
