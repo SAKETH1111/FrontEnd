@@ -35,5 +35,18 @@ We use Shimmer UI- it shows fake page untill the UI gets loaded.
 - React will re render the whole component when state is updated.
 - So you declare const variable for the state but how is it assigning the value to it, As state updates react re renders the component. So it will be a new variable that is getting assigned.
 - But UI you will not see that componenet is entierly rendering due react reconcilation, it checks the diff and updates the UI.
-- 
+- flex will align the items in 1 one line side by side
+
+We are creating a input box to search a what type of restaurant we want. We will be creating a state variable to take the input in input box. but here we need to use onChange event handler as we type in the input box. We need to update the set state. if dont use on change the input box will be the default value we passed in the state.
+
+
+Always remeber react state update renders the component.
+State will render the component which it is present in.
+
+JSon viewer chrome plugin shows the json files in prettier way
+
+you can use this infront of the url to fix the cors proxy issue.
+https://corsproxy.io/?
+
+instead of the plugin. but it might have a limit, as we are developement it is fine.
 
