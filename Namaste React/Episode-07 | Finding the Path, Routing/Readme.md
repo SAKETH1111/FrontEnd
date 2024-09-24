@@ -58,3 +58,5 @@ There are two types of routing
 2. Server side routing
 
 Dynamic Routing
+
+useParam hook is used to get the details from the url like the id in the url
