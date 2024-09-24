@@ -51,4 +51,10 @@ Outlet - it will be used for children route to load the component or page based 
 
 To go to one page to other when you click on some button, You should never use Anchor tag in React. Because it will refresh the whole page. It is slow. To make it faster. Use Link from react router DOm.
 Link to="/about">About us</Link>
-So
+So it refreshes the component, instead of the browser loading.
+
+There are two types of routing
+1. Client side routing
+2. Server side routing
+
+Dynamic Routing
