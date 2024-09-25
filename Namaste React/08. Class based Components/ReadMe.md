@@ -54,4 +54,17 @@ this.setState({
   ComponentDidMount will be used to make the API call, It is same like useEffect in functional componenets. We use them becuase they will run in the end after the UI component is loaded.
   
    ComponentDidMount will load at the end, if there are multiple children still the ComponentDidMount will mount only after completing the constructor and render phase of all the children.
+
+   componentdidupdate will be called when we set a state, new prop and forceUpdate() , render will be called first then the componetdidupdate will be called.
+
+   componentWillUnmount() - When component is disappered from the page then componentwillunmount will be called. like going to other page. to clear anything we use componentWillUnmount.
+
+   suppose we create setInterval for 1000 seconds in ComponentDidMount. It is getting called even if i am not in that component. so to stop this we need to use clearInterval in componentWillUnmount 
+   never compare functional component to class componenet.
+
+   
+   
+   
+   
+https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
    
