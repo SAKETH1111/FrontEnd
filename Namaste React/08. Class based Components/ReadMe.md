@@ -46,4 +46,10 @@ this.setState({
                 count: this.state.count+1,
             })
 ```
+
+
+  First Constructor is loaded when component is instantiated then render is called.
+  ComponentDidMount will be called after constructor, render then ComponentDidMount.
+
+  ComponentDidMount will be used to make the API call, It is same like useEffect in functional componenets.
   
