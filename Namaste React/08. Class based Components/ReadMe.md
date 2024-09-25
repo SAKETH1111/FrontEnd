@@ -51,5 +51,7 @@ this.setState({
   First Constructor is loaded when component is instantiated then render is called.
   ComponentDidMount will be called after constructor, render then ComponentDidMount.
 
-  ComponentDidMount will be used to make the API call, It is same like useEffect in functional componenets.
+  ComponentDidMount will be used to make the API call, It is same like useEffect in functional componenets. We use them becuase they will run in the end after the UI component is loaded.
   
+   ComponentDidMount will load at the end, if there are multiple children still the ComponentDidMount will mount only after completing the constructor and render phase of all the children.
+   
