@@ -41,8 +41,9 @@ Loading a class means you are creating a Instance of the class. when you are cre
 state variable is called and this where you need to declare the `state variable`.
 
 to set the state, never update the state varibally directly.
+```
 this.setState({                
                 count: this.state.count+1,
             })
-
+```
   
