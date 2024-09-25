@@ -28,6 +28,9 @@ It has a render method which returns the JSX.
             coun1:1
         }
     }
+
+  const {count} = this.state;
+
   ```
   We need to always right super props. We never use this.props before super(props).
   this.props will be used to get the props value in class based component.
@@ -37,6 +40,9 @@ How can we create state variable hook in Class based company.
 Loading a class means you are creating a Instance of the class. when you are creating a instance of class, 
 state variable is called and this where you need to declare the `state variable`.
 
-
+to set the state, never update the state varibally directly.
+this.setState({                
+                count: this.state.count+1,
+            })
 
   
