@@ -11,3 +11,7 @@ other options are bootstrap, Chakra UI, Ant Design, tailwind css.
 Here we will learn about Tailwind CSS.
 
 Tailwind CSS- Rapidly build modern websites without ever leaving your HTML.
+Tailwind uses className to write the css.
+
+w-[200px]
+width of 200 px
