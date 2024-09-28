@@ -15,3 +15,14 @@ Tailwind uses className to write the css.
 
 w-[200px]
 width of 200 px
+
+pros
+- lightweight
+- you can write the css in the same file as your main code
+
+- cons
+- css style may go long and it can make the code very long and uglt.
+
+- screen sixe bigger than small then applied property changes like below
+
+- sm:bg-yellow-100
