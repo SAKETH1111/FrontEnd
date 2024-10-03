@@ -68,6 +68,9 @@ You can use nested form of UserContext.Provider.
 
 you can pass the state through the context.
 
+UseContext is a good for small to medium size applications but in the industry you need to manage large applications. So you need to use Data or state Management library  like redux, flux.
+
+Redux is not part of react, it is a outside library we use it but useContext is the inbuilt in react.
 
 
 
