@@ -44,3 +44,31 @@ example are like login details, Theme.
 React Context:
 
 will use createcontext to create the global database
+
+will use useContext to acess that.
+
+Hooks are not accessible in class based component.
+<UserContext.consumer> .consumer will help to get the context data. we need to define call back function to get it.
+
+<UserContex.consumer>
+{({loggedInUser}) => (
+<h1>{loggedInUser}</h1>
+
+)}
+</>
+
+<UserContex.Provider value={{loggedInUser:"Saketh"}}>
+
+</>
+
+It will update all the values with the provider for which component we define.
+
+You can use nested form of UserContext.Provider.
+
+
+you can pass the state through the context.
+
+
+
+
+
