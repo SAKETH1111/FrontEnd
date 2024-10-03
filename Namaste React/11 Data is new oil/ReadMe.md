@@ -72,6 +72,8 @@ UseContext is a good for small to medium size applications but in the industry y
 
 Redux is not part of react, it is a outside library we use it but useContext is the inbuilt in react.
 
+Redux is scalable and which is useful in large scale application.
+
 
 
 
