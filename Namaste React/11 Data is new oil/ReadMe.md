@@ -21,3 +21,26 @@ You can start recording your activity, it will show all the steps you have taken
 colorful are the components getting rendered which you will see when you do a action.
 
 You can also check how much time each component is taking to load.
+
+State getting lifted up, basically pasing the state as props from the parent component.
+
+controlled - if the same component is controlling it like having state to decide the steps then it is controlled component.
+
+UnControlled- if it is not controlled by the component, controlled by props or parent component it is uncontrolled component.
+
+Can you modify the parent state from child. It is not possible directly but indirectly you can do that
+
+Props Drilling.
+passing data to parent to child which is like 7 or 8 levels is basically passing the props from each parent to child till the last child.
+
+it is hectic task and not a good way. So this is mot a right way to pass the props. This is props drilling.
+
+so how can we do that?
+
+So achieve this we use React context to solve this. bascially we will create global place to keep our data.
+
+example are like login details, Theme.
+
+React Context:
+
+will use createcontext to create the global database
