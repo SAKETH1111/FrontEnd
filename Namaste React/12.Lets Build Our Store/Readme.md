@@ -8,4 +8,5 @@
 8. Redux offer states management. It can be used in combination with react, angular, next.js etc
 9. In this project we will be using React-Redux library and React-Toolkit. We will not use the (vanila)redux library because it is old now.
 10. Redux-toolkit= Standard way to write redux logic.
-11. 
+11. Parts of Redux are called slices.
+12. 
