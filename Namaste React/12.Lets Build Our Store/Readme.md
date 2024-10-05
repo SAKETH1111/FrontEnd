@@ -15,3 +15,28 @@
 15. When using selector, it menas subscribing to the store.
 16. Click Add button -> dispatch Action will be called -> Will call a reducer function -> which updates the slice of a redux store.
 17. Component -> selector(it helps in updating the component and getting the information from store) -> subscribed store 
+
+
+  # Redux ToolKit
+  Steps to setup redux
+  - Install @reduxjs/toolkit 2.2.7 and react-redux 9.1.2
+  - Build our store
+  - connect our store to our app
+  - we will create a card slice ( cartSlice)
+  - we will dispatch (Action)
+  - Selector
+
+    configureStore is used to create the store. it comes from @reduxjs/toolkit as storage creation is redux 
+    provider comes from react-redux becuase it acts as a bridge between react and redux to get the data from store
+
+    Provider would be wrapped around the whole application. we will pass the store as props to it.
+
+    slice can be created using createSlice which comes from @reduxjs/toolkit. 
+    In Slice first we pass the name of the slice, 2nd the initalState of the slice then we will pass the reducer, in Reducer we will have what type of action and what reducer function should we do.
+    createSlice will return action and reducers. we need to export both the action and dispatcher.
+    
+    - selector is a basically hook , to acess to store. So we will use this hook to get access to the store. so it will help in subscribing to a store.
+   
+    - to dispacth an action we will use a useDispatch hook to do it from react-redux
+   
+    - 
