@@ -39,4 +39,26 @@
    
     - to dispacth an action we will use a useDispatch hook to do it from react-redux
    
-    - 
+    - while using selector, you need to correctly subscribe to slice of the store.
+   
+  - in Store it is reducer, in slices it is redcuers** becuase ir has multiple reducers.
+
+  - older redux or vanilla redux it is said you should not modify or mutate the state.
+  - We need to cretate a new state , we need to update those value to new state and then return it. It was a burden to developers. and retuning is mandaotry.
+
+  - Redux toolkit give us to mutate the state. return is not mandatory.
+  - Redux uses immer to mutate the state.
+
+  - to clear cart we need to use
+  - state.item.length =0; but not state.item=[] because you are just adding reference to the state, the original state is not modified. so passing length 0 will make the original state empty.
+  - Current(state) will have the original object it will not change when you modify the local state.
+
+  - either mutate a exisiting state or return a new state.
+  - state.items.length=0; // []
+     return {items: []}
+    - either of them works.
+   
+    - Redux dev tool it can be used to debug redux.
+RTK Query
+middleware thunk
+https://redux-toolkit.js.org/rtk-query/overview
