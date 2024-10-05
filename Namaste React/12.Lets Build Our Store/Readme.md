@@ -13,4 +13,5 @@
 13. when you click on add button , it will dispatch an action. Then it will calls a function, the function is known as reducer. Then this function will modify the slice.
 14. Read from slice. We will use selector. selector will read the data from slice and it will updated where the data is consumed.
 15. When using selector, it menas subscribing to the store.
-16. 
+16. Click Add button -> dispatch Action will be called -> Will call a reducer function -> which updates the slice of a redux store.
+17. Component -> selector(it helps in updating the component and getting the information from store) -> subscribed store 
