@@ -21,4 +21,6 @@
 - if we need to run test case use command `npm run test`- it will call jest
 - `npx jest --init` It will initalise and configure the jest. `npx` means executing. use `jsdom` testing environment. As test cases dont run on browser so they need environment to run, so jsdom is like a browser feature where the test runs.
 - coverage report - babel will be used here.
+- `npm i -d jest-environment-jsdom` we need to install this becuase jestV28 above doesnot have this in it.
+- _ _ = dunder tests
 
