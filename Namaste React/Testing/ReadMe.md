@@ -23,4 +23,17 @@
 - coverage report - babel will be used here.
 - `npm i -d jest-environment-jsdom` we need to install this becuase jestV28 above doesnot have this in it.
 - _ _ = dunder tests
+- @babel/preset-react install this to work jsx in test cases and include that in configuration
+## How to write tests
+2 arguments will be passed, description and call back function.
+```
+test("Description of Test", () => {
 
+// This is called assertion.
+expect(result).toBe(7);
+
+render(<Contact/>) // It will render into JS DOM.
+const  heading = screen.getByRole("heading")';
+
+});
+```
