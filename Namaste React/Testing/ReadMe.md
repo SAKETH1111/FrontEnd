@@ -34,6 +34,9 @@ expect(result).toBe(7);
 
 render(<Contact/>) // It will render into JS DOM.
 const  heading = screen.getByRole("heading")';
+expect(header).toBeInTheDocument();
 
 });
 ```
+
+- we need to add `npm -i -D @testing-library/jest-dom` for toBeInTheDocument
