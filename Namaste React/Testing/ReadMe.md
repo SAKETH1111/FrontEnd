@@ -27,16 +27,22 @@
 ## How to write tests
 2 arguments will be passed, description and call back function.
 ```
-test("Description of Test", () => {
+// test or it can be used to write test . both are same.
+test or it("Description of Test", () => {
 
 // This is called assertion.
 expect(result).toBe(7);
 
 render(<Contact/>) // It will render into JS DOM.
-const  heading = screen.getByRole("heading")';
+const  heading = screen.getByRole("heading")'; // button
 expect(header).toBeInTheDocument();
+// multiplr item use getAllbyRole.
+console.log will return react element, we willget piece if jsx,
 
 });
 ```
 
 - we need to add `npm -i -D @testing-library/jest-dom` for toBeInTheDocument
+
+- you can use `describe` block to group the test cases.
+- 
