@@ -5,8 +5,9 @@ Things i Learned in this course
 2. Webpack
 3. Parcel
 4. React
-5. Javascript
-6. Redux
-7. Redux toolkit
-8. Contex API
-9. TailWind CSS
+5. React Router
+6. Javascript
+7. Redux
+8. Redux toolkit
+9. Contex API
+10. TailWind CSS
