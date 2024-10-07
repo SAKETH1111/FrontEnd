@@ -45,4 +45,7 @@ console.log will return react element, we willget piece if jsx,
 - we need to add `npm -i -D @testing-library/jest-dom` for toBeInTheDocument
 
 - you can use `describe` block to group the test cases.
+- `fireEvent.click(loginButton)`
+## Integration Testing
+- Testing for a flow of steps
 - 
