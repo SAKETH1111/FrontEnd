@@ -48,4 +48,5 @@ console.log will return react element, we willget piece if jsx,
 - `fireEvent.click(loginButton)`
 ## Integration Testing
 - Testing for a flow of steps
+- watch-test will keep the tests running and when you update the code.. it will run again based on the changes
 - 
