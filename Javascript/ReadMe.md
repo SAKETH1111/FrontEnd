@@ -1,28 +1,37 @@
 # JavaScript Documentation for Easy Learning
 
-
-
-Here’s a detailed explanation of execution context in JavaScript, how it works, and the concepts of memory and code components.
---
-
 ## Execution Context in JavaScript
 
-In JavaScript, everything happens within an execution context. This is the environment where JavaScript code is evaluated and executed. When JavaScript code runs, the JavaScript engine creates an execution context to keep track of variables and functions and to manage the flow of code execution.
+Here’s a detailed explanation of **execution context** in JavaScript, how it works, and the concepts of memory and code components.
+
+In JavaScript, everything happens within an **execution context**. This is the environment where JavaScript code is evaluated and executed. When JavaScript code runs, the JavaScript engine creates an execution context to keep track of variables and functions and to manage the flow of code execution.
 
 ### 1. What is Execution Context?
-An execution context is the wrapper that helps the JavaScript engine keep track of everything happening in the code. Every time a function is called, a new execution context is created, allowing for isolated scopes.
+An **execution context** is the wrapper that helps the JavaScript engine keep track of everything happening in the code. Every time a function is called, a new execution context is created, allowing for isolated scopes.
 
 ### 2. Components of Execution Context
 The execution context consists of two main components:
-
-Memory Component (Variable Environment)
-Code Component (Thread of Execution)
+- **Memory Component** (Variable Environment)
+- **Code Component** (Thread of Execution)
 ### 3. Memory Component (Variable Environment)
-The memory component of the execution context, also known as the variable environment, is where variables and functions are stored in a key-value format. During the creation phase, JavaScript allocates memory for variables and functions in this environment.
+The **memory component** of the execution context, also known as the **variable environment**, is where variables and functions are stored in a key-value format. During the creation phase, JavaScript allocates memory for variables and functions in this environment.
 
-Variables are assigned undefined initially.
-Functions are stored with their entire definitions.
+- Variables are assigned undefined initially.
+- Functions are stored with their entire definitions.
 
+Example:
+```
+function greet() {
+  var name = "Alice";
+  console.log(name);
+}
+
+```
+
+
+In this case:
+- greet is stored in the variable environment, and its definition is available for later execution.
+- name is also stored, but it’s initially undefined and later updated to "Alice" when greet is executed.
 **EP-01**
 
 1. Everything in JavaScript happen inside an **execution context**.
