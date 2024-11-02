@@ -163,3 +163,38 @@ z = 20; // TypeError: Assignment to constant variable
 // Declaration without initialization is not allowed
 const w; // SyntaxError: Missing initializer in const declaration
 ```
+
+**EP-09 | BLOCK SCOPE & Shadowing in JS 🔥**
+
+Let & const Block Scope in-depth tutorial covers what is a Block, Scope, and Block Scope in JavaScript. With live code examples and detailed explanations, we also will see what is Shadowing in JavaScript. We also talk about Illegal Shadowing and how different variable declarations using var, let and const behave differently when initialized in the Block Scope.
+
+Block Scope has a lexical behavior and also follows rules of the Lexical Scope chain. This video covers everything that happens under the hood. The video is a little long but I REQUEST YOU to watch it fully, this concept will help us in later videos. 🙏
+
+Block - We group multiple statements together where js expects only 1 statement.
+like in if(true) {
+....
+....
+}
+
+let & const are block store because they are stored in block instaed of global and cannot be accessed out of the block.
+
+Shadowing in js - var, let is shadowed when redeclared inside other block.
+
+if not global then script for let and var, in block it is block scope.
+
+Shadowing will also behave in function also.
+
+Illegal shadowing - if you do let using var.
+function and arrow function has same scope
+
+**EP-10 | Closures in JS 🔥**
+
+a function bined with the lexical scope bundle environment is closure
+you can return a function
+It remebers lexical scope with function that is returned.
+
+**EP-11 | setTimeout + Closures Interview Question 🔥**
+
+This question will strengthen your knowledge and understanding of Closures and will also help you in your frontend/full stack/ web development interview. We will start with an easy JS question and slowly move to the hard and tricky interview question.
+
+If you are giving web developer interviews actively, there are high chances that you might find this question in your frotend developer interview. Candidates have faced this question in their interviews for Amazon, Facebook, Paypal, Microsoft and many other big tech firms.
