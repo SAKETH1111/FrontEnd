@@ -101,3 +101,65 @@ Diving deep into Scope, Lexical Environment, and The Scope Chain in JavaScript w
 
 Along with Code Examples, I've shown all these concepts visually so that it helps you better understand. And not only these, but I also covered a proper demo of Scope and The Scope chain in Browser. That's amazing, do watch it. You'll definitely fall in love with The Scope Chain in JS. ❤️
 
+Scope is where you can acess the variable or function.
+
+lexical environmental is a local memory with reference to lexical environment of parent.
+Global environment points to null it does not have a parent.
+
+**EP-08 | let & const in JS 🔥Temporal Dead Zone**
+
+let & const in JavaScript behave differently when they are Hoisted. Understanding the difference between var, let and const in JS will help you write better code. const and let are in a Temporal Dead Zone until they are initialized some value. You might encounter SyntaxError, TypeError or ReferenceError while using them in your code.
+
+This JavaScript tutorial video covers everything in depth about how let and const are hoisted and how let in js is different from var and const in JS. We will also see what happens behind the scenes in the browser when you use them in code. Another exciting part of the video is the explanation of the difference between Syntax Error, Reference Error, and Type Error in JavaScript.
+
+**Variable Declarations in JavaScript: var, let, and const**
+JavaScript provides three ways to declare variables: var, let, and const. Each has unique characteristics regarding scope, hoisting, reassignment, and the Temporal Dead Zone. Let's explore these differences with examples.
+
+**1. var Declaration**
+**Scope:** var is function-scoped. Variables declared with var are accessible within the function they're declared in or globally if declared outside of a function.
+**Hoisting:** var declarations are hoisted to the top of their scope, meaning the variable can be used before its declaration.
+**Global Object Attachment:** When declared globally, var attaches to the global window object (in the browser).
+**Reassignment:** You can redeclare a var variable multiple times without errors.
+**javascript**
+```
+console.log(a); // Output: undefined (hoisted)
+var a = 10;
+console.log(a); // Output: 10
+
+// Redeclaration is allowed
+var b = 20;
+var b = 30;
+console.log(b); // Output: 30
+```
+
+**2. let Declaration**
+**Scope:** let is block-scoped, which means it is only accessible within the block (e.g., within curly braces {}) where it’s defined.
+**Hoisting:** let is hoisted but does not initialize to undefined. Instead, it enters a "Temporal Dead Zone" (TDZ) from the start of the block until the variable is declared.
+**Global Object Attachment:** When declared globally, let does not attach to the window object.
+**Temporal Dead Zone:** You cannot access a let variable before its declaration in the code, or it will throw a ReferenceError.
+**Reassignment:** Redeclaring a let variable in the same scope results in a SyntaxError.
+**javascript**
+```
+console.log(x); // ReferenceError: Cannot access 'x' before initialization
+let x = 10;
+
+// Redeclaration not allowed in the same scope
+let y = 20;
+let y = 30; // SyntaxError: Identifier 'y' has already been declared
+
+```
+**3. const Declaration**
+**Scope:** Like let, const is also block-scoped.
+**Hoisting:** const is hoisted but has a Temporal Dead Zone, similar to let.
+**Reassignment:** Variables declared with const cannot be reassigned after their initial assignment, and they must be initialized at the time of declaration. Attempting to reassign a const variable will throw a TypeError.
+**Global Object Attachment:** Like let, const does not attach to the window object when declared globally.
+**javascript**
+```
+console.log(z); // ReferenceError: Cannot access 'z' before initialization
+const z = 10;
+
+z = 20; // TypeError: Assignment to constant variable
+
+// Declaration without initialization is not allowed
+const w; // SyntaxError: Missing initializer in const declaration
+```
