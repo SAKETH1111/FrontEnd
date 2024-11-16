@@ -67,6 +67,114 @@ SO all these is managed by call stack by global execution context. so it pushes 
 
 Remeber : Call stack maintains the order of execution of execution contexts.
 
+---
+# Step-by-Step Execution Process in JavaScript
+
+Here’s a breakdown of what happens step-by-step when the JavaScript code runs, covering the creation of execution contexts, memory allocation, and the role of the call stack.
+
+## Step-by-Step Execution Process in JavaScript
+
+When you run JavaScript code, the engine goes through several phases to interpret and execute the code. Let’s go through each step with the example provided.
+
+```
+javascript
+var n = 2;
+function square(n) { // n is called a parameter
+  var ans = n * n;
+  return ans;
+}
+var square2 = square(n); // Here, n is the argument
+var square4 = square(4);
+```
+### 1. Global Execution Context Creation
+
+First, JavaScript creates a **global execution context**. This context has two phases:
+
+- **Memory Creation Phase**
+- **Code Execution Phase**
+
+The global execution context consists of:
+
+- **Memory Component (Variable Environment):** Stores variables and functions as key-value pairs.
+- **Code Component (Thread of Execution):** Executes code line by line.
+
+---
+
+### 2. Memory Creation Phase (First Pass)
+
+In the first pass, JavaScript allocates memory for all variables and functions in the code. Variables are initially set to `undefined`, and functions are stored with their full definitions.
+
+- `n` is allocated memory and initially set to `undefined`.
+- The `square` function is allocated memory with its entire function definition.
+- `square2` and `square4` are allocated memory and initially set to `undefined`.
+
+---
+
+### 3. Code Execution Phase (Second Pass)
+
+In the second pass, JavaScript executes the code line by line, updating variable values as it encounters them.
+
+1. `var n = 2;`
+   - `n` is updated from `undefined` to `2`.
+2. `function square(n) { ... }`
+   - The `square` function is already in memory with its definition, so no changes occur here.
+3. `var square2 = square(n);`
+   - The `square` function is called with `n` as an argument (which is `2`).
+   - A **new execution context** is created for this function call.
+
+---
+
+### 4. Function Execution Context Creation (for `square(n)`)
+
+When `square(n)` is invoked, JavaScript creates a **new execution context** for the function call. This new context also goes through memory creation and code execution phases.
+
+#### In the Memory Creation Phase:
+- The parameter `n` is set to the argument passed (`2`), and `ans` is initially set to `undefined`.
+
+#### In the Code Execution Phase:
+- `ans` is calculated as `n * n` (which is `2 * 2 = 4`), and `4` is returned to `square2`.
+- The function execution context is then removed from the **call stack**.
+
+---
+
+### 5. `var square4 = square(4);`
+
+- The `square` function is called again, this time with `4` as an argument.
+- A **new execution context** is created again, following the same memory and code execution phases.
+
+#### Memory Creation Phase:
+- `n` is set to `4`.
+- `ans` is initially set to `undefined`.
+
+#### Code Execution Phase:
+- `ans` is calculated as `4 * 4 = 16`, and `16` is returned to `square4`.
+
+- This execution context is also removed from the **call stack** after returning.
+
+
+### 5. Call Stack Management
+
+The **call stack** is responsible for managing the order of execution contexts. Here’s how it works in this example:
+
+- The **global execution context** is pushed onto the call stack first.
+- Each time `square` is called, a new execution context is pushed onto the call stack.
+- After each function call completes, the execution context is popped off the call stack, returning control to the previous context.
+- When the script finishes, only the global execution context remains until the program completes.
+
+
+## Summary
+
+| Step                        | Description                                                                                   |
+|-----------------------------|-----------------------------------------------------------------------------------------------|
+| **Global Execution Context** | Created first, with memory allocation for variables (`undefined`) and function definitions.   |
+| **Memory Creation Phase**    | Variables are set to `undefined`, and functions are stored with definitions.                 |
+| **Code Execution Phase**     | Variables are assigned values, and functions are invoked as needed.                          |
+| **Function Execution Context** | Created each time a function is called, with its own memory and code components.            |
+| **Call Stack**               | Manages the order of execution contexts, pushing and popping them as functions are called.   |
+
+The **call stack** maintains the order of execution, ensuring that each function completes before moving on to the next one.
+
+---
 **Ep-03** Hoisting in JS
 ```
 getName();
