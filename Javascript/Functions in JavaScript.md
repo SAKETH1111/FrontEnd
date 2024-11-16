@@ -157,9 +157,7 @@ const add = (a, b) => a + b;
 | Use Case                 | General purpose          | Inline functions           | Short, concise functions    |
 
 ---
-```
 
----
 ### What is a Callback Function?
 
 In JavaScript, a **callback function** is a function that is passed as an argument to another function and is executed after some operation has been completed. It is a way to ensure that a function is executed only after a certain task is finished, enabling asynchronous behavior.
