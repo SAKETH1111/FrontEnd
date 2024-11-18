@@ -21,7 +21,7 @@ So these call back function are browser capabilities so we have sepeate queue ca
 So we have event loop which checks for events in call back queue and add into call stack 
 
 
-When event is added , the callback is stored and will be sit in web api's environment. when event happens it will be added to call back queue.
+When event is added , the callback or task queue is stored and will be sit in web api's environment. when event happens it will be added to call back queue.
 
 Fetch:
 Fetch will wait untill promoise is resolved and callback function is called.
@@ -29,6 +29,12 @@ Fetch will wait untill promoise is resolved and callback function is called.
 Micro task queue
 
 Which has higher priority than Call back queue. Fetch will go into micro task queue.
+
+All the tasks come through promise's & mutation observer come to micro task. 
+
+microtask is empty then only we go to call back queue. this is called starvation 
+
+
 
 When call stack is empty, micro task added the call stack then the call back queue
 
