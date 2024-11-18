@@ -4,6 +4,8 @@
 ## What is a Callback Function in JavaScript?
 A **callback function** is a function passed as an argument to another function and is executed after the completion of an operation. It allows for asynchronous programming, enabling JavaScript to perform tasks like fetching data without blocking the main thread.
 
+In Inspect you can look at what event listenr's are attached to buttons and etc.
+
 ### Example: Basic Callback Function
 ```javascript
 function fetchData(callback) {
